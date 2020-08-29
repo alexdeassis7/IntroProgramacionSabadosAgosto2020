@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1598709404 source:c:\users\alex\documents\clase2ejerciciosecuencial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<wchar.h>
+	<locale.h>
+
