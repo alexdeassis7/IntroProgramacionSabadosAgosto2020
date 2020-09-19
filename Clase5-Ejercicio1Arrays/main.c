@@ -16,21 +16,13 @@ int main()
     for(int indice = 0 ; indice < CANTIDAD ; indice++ )
     {
         vectorNotas[indice] = rand() % 100 + 1;
-
-
-        /**
-        numero = rand() % 11 + 20 //ESte enta entre 20 y 30
-        numero = rand () % (N-M+1) + M // este esta entre M y N
-
-        */
-
+        /**        numero = rand() % 11 + 20 //ESte enta entre 20 y 30
+        numero = rand () % (N-M+1) + M // este esta entre M y N        */
         //acumuladorNumeros = acumuladorNumeros + vectorNotas[indice];
         acumuladorNumeros += vectorNotas[indice];
         printf("vectorNotas[%i] = %i \n",indice,vectorNotas[indice]);
     }
-
     promedio = acumuladorNumeros / CANTIDAD ;
-
     for(int i = 0 ; i < CANTIDAD ; i ++)
     {
         if(vectorNotas[i] > promedio)
@@ -38,23 +30,24 @@ int main()
             MayoresAlPromedio++;
         }
     }
-
     int listaMayoresAlPromedio[MayoresAlPromedio];
     int j = 0 ;
-    for(int x = 0 ; x < CANTIDAD ; x++ ){
-        if(vectorNotas[x] > promedio){
+    for(int x = 0 ; x < CANTIDAD ; x++ )
+    {
+        if(vectorNotas[x] > promedio)
+        {
             listaMayoresAlPromedio[j] = vectorNotas[x] ;
             j++;
         }
     }
-
     printf("promedio : %.2f \n",promedio);
     printf("La cantidad de datos mayores al promedio es : %i \n",MayoresAlPromedio);
     printf("La lista de datos mayores al promedio es la siguiente : \n");
 
-    for(int p = 0 ; p < MayoresAlPromedio ; p++){
+    for(int p = 0 ; p < MayoresAlPromedio ; p++)
+    {
         printf("%i -",listaMayoresAlPromedio[p]);
     }
-
+    system("pause");
     return 0;
 }

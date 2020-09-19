@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600530417 source:c:\users\alex\documents\clase5subalgoritmosdemostracion\main.c
+	<stdio.h>
+	<stdlib.h>
+
